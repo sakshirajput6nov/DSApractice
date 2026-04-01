@@ -3,21 +3,22 @@ package kunal;
 public class findIndexOfElement {
 
 	public static void main(String[] args) {
+		int a=9;
 		// TODO Auto-generated method stub
-		int[]arr= {12,131,14,2,31,4};
+		int[]arr= {12,1311,14,2,31,4};
 		int target=131;
-		System.out.println(find(arr,target,0));
+		System.out.println(findIndex(arr,target,0));
 		
 
 	}
-	static boolean find(int[]arr,int target,int index) {
+	static int findIndex(int[]arr,int target,int index) {
 		if(arr.length==index) {
-			return false;
+			return -1;
 		}
 		if(target==arr[index]) {
-			return true;
+			return index;
 		}
-		return find(arr,target,index+1);
+		return findIndex(arr,target,index+1);
 		
 	}
 
