@@ -43,6 +43,7 @@ public class getElementFromIndex {
 				targetindex=3;
 				 result=get(a,targetindex);
 				System.out.println(result);
+				// T.C =O(n) in linked list but in array O(1)
 
 	}
 
