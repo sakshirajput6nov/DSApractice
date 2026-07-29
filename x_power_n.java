@@ -9,6 +9,7 @@ public class x_power_n {
 	public static int Power(int x,int n) {
 		if(n==1) {
 			return x;
+			//return 1; when condition is n==0
 		}
 		return x*Power(x,n-1);
 	}
