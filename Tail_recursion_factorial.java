@@ -13,5 +13,11 @@ public class Tail_recursion_factorial {
 		}
 		return fact(n-1,ans*n);// here ans*n
 	}
+//	public static int fact(int n,int ini) {
+//		if(n==ini) {
+//			return n;//here change 
+//		}
+//		return ini*fact(n,ini+1);// here ans*n
+//	}
 
 }
